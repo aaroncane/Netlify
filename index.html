@@ -9,26 +9,92 @@
 </head>
 
 <body>
-    <form name="contact" method="POST" data-netlify="true">
-        <p>
-            <label>Your Name: <input type="text" name="name" /></label>
-        </p>
-        <p>
-            <label>Your Email: <input type="email" name="email" /></label>
-        </p>
-        <p>
-            <label>Your Role: <select name="role[]" multiple>
-                    <option value="leader">Leader</option>
-                    <option value="follower">Follower</option>
-                </select></label>
-        </p>
-        <p>
-            <label>Message: <textarea name="message"></textarea></label>
-        </p>
-        <p>
-            <button type="submit">Send</button>
-        </p>
-    </form>
+
+    <section align="center">
+
+        <img src="https://fernandafamiliar.soy/wp-content/uploads/2020/07/Captura-de-Pantalla-2020-07-10-a-las-12.13.22.png"
+            alt="a huevo chismecito" , height="314" , width="390">
+
+    </section>
+    <section name="chismografo" id="chismografo">
+        <form action="chismografo_guarda.html" method="POST">
+            <p>
+                <label for="nombre">Anota tu nombre:</label>
+                <input id="casilla1" name="nombre" type="text" minlength="4" maxlength="20" placeholder="o tu apodo"
+                    required>
+            </p>
+            <p>
+                <label for="edad">Pon tu edad:</label>
+                <input id="casilla2" name="edad" type="number" minlength="1" maxlength="4"
+                    placeholder="no mientas, Diosito sabe">
+            </p>
+            <p>
+                <label for="cumple">Anota tu cumple:</label>
+                <input id="" name="cumple" type="date">
+            </p>
+            <p>
+                <label for="grupo">Anota tu grupo:</label>
+                <input id="" name="grupo" type="text">
+            </p>
+            <p>
+                <label for="zodiaco">Signo zodiacal segun los caballeros del zodiaco:</label>
+
+                <select name="zodiaco" id="">
+                    <option value="aries">Mü </option>
+                    <option value="tauro">Aldebaran </option>
+                    <option value="géminis">Saga</option>
+                    <option value="cáncer">Máscara de muerte</option>
+                    <option value="leo">Aioria </option>
+                    <option value="virgo">Shaka</option>
+                    <option value="libra">Dohko </option>
+                    <option value="escorpión">Milo</option>
+                    <option value="sagitario">Aioros </option>
+                    <option value="capriconio">Shura </option>
+                    <option value="acuario"> Camus </option>
+                    <option value="piscis">Afrodita </option>
+                </select>
+            </p>
+            <p>Cual es tu genero</p>
+            <p><input type="radio" name="genero" value="Femenino">Femenino
+                <input type="radio" name="genero" value="Masculino">Masculino
+            </p>
+            <p>tu preferencia setsual (selecciona todos con los que te identificas)</p>
+
+            <label for="preferencias">Heterosexual</label><input type="checkbox"><br>
+            <label for="preferencias">Homosexual</label><input type="checkbox"> <br>
+            <label for="preferencias">Asexual</label><input type="checkbox"><br>
+            <label for="preferencias">Pansexual</label><input type="checkbox"><br>
+            <label for="preferencias">Demisexual</label><input type="checkbox"><br>
+            <label for="preferencias">Otro</label><input type="text" , placeholder="Otro">
+
+            <p>
+                <label for="insta"> Perfil de instagram</label>
+                <input type="text" placeholder="coloca tu @" required>
+            </p>
+            <p>
+                <label for="aficiones"> Aficiones <br></label>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50" , placeholder="lo que te gusta"></textarea>
+            </p>
+            <p>
+                <label for="Crunch">Crunch</label>
+                <input type="text" name="crush" id="crush" required placeholder="Quien te gusta del salon">
+            </p>
+            <p>
+                <label for="Musica">Genero musical favorito</label>
+                <input type="text" name="musical" id="Musica" required placeholder="o banda o lo que sea">
+            </p>
+            <p>
+                <label for="mensaje"> Deja un bonito mensaje para la banda <br></label>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50" , placeholder="te amo ok?"></textarea>
+            </p>
+            <input type="submit" value="Chismenvialo">
+            <input type="reset" value="Abortar misión">
+            </p>
+        </form>
+
+
+    </section>
+
 
 </body>
 
